@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvin Atta Boachie | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Alvin Boachie | <span class="accent-text">Data Analyst</span></a>
+            <div class="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="https://github.com/alvino11/alvino11.github.io" class="nav-link active">Portfolio</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <div class="nav-socials">
+                    <a href="https://github.com/alvino11/alvino11" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/alvin-atta-boachie-0aaa18157" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="about" class="hero-section">
+        <div class="hero-container">
+            <div class="profile-wrapper">
+                <img src="assets/profile.jpg" alt="Alvin Atta Boachie Profile" class="hero-profile-img">
+            </div>
+            <div class="hero-info">
+                <h1 class="hero-name">Alvin Boachie</h1>
+                <h2 class="hero-title">Data Analyst | Turning Data into Insights</h2>
+                <p class="hero-description">
+                    Alvin is a professional data analyst focused on transforming complex datasets into actionable business strategies. Experienced in statistical analysis, predictive modeling, and building intuitive, automated visualization systems.
+                </p>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-download"><i class="fas fa-file-arrow-down"></i> RESUME</a>
+                    <a href="#contact" class="btn btn-contact">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills" class="skills-section">
+        <div class="section-container">
+            <h2 class="section-title">Areas of Expertise</h2>
+            <p class="section-subtitle">Take a look at some of the core tools and methodologies I leverage.</p>
+
+            <div class="skills-minimal-grid">
+                <div class="skill-item">
+                    <div class="skill-icon-wrapper">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <h3>Advanced Excel</h3>
+                    <p>Building dynamic KPI dashboards utilizing advanced formulas, Power Query, and Pivot Tables to merge complex datasets.</p>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-icon-wrapper">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Power BI</h3>
+                    <p>Developing interactive enterprise-level reports with robust data modeling, star schemas, and DAX calculations.</p>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-icon-wrapper">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>SQL Database Analytics</h3>
+                    <p>Writing highly optimized relational queries for complex joins, aggregations, and automated ETL cleaning processes.</p>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-icon-wrapper">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python Analytics</h3>
+                    <p>Performing extensive exploratory data analysis and data science pipelines using Pandas, NumPy, and visualization libraries.</p>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-icon-wrapper">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Statistical Modeling in R</h3>
+                    <p>Applying rigorous statistical computations, handling data cleaning tasks, and generating tailored data visualizations.</p>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-icon-wrapper">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning</h3>
+                    <p>Designing predictive architectures, including Support Vector Machine (SVM) classification and decision tree modeling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <div class="section-container">
+            <h2 class="section-title">Featured Projects</h2>
+                
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="excel">EXCEL</button>
+                <button class="filter-btn" data-filter="powerbi">POWER BI</button>
+                <button class="filter-btn" data-filter="sql">SQL</button>
+            </div>
+    
+            <div class="project-grid">
+                <div class="project-card" data-category="powerbi">
+                    <div class="card-inner">
+                        <div class="project-visual">
+                            <img src="powerbi-dashboard.png" alt="Sales Performance Dashboard">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Sales Performance Dashboard (Power BI)</h3>
+                            <p class="project-summary">Dynamic performance data visualization dashboard optimizing transactional monitoring, revenue trends, and operational metrics across international market regions.</p>
+                            <div class="tech-icons">
+                                <i class="fas fa-chart-pie color-pbi" title="Power BI"></i>
+                                <i class="fas fa-database color-sql" title="SQL"></i>
+                                <i class="fab fa-python color-py" title="Python"></i>
+                            </div>
+                            <div class="project-cta">
+                                <a href="#" target="_blank" class="btn-card primary-card"><i class="fas fa-arrow-up-right-from-square"></i> VIEW LIVE DASHBOARD</a>
+                                <a href="https://github.com/alvino11/alvino11" target="_blank" class="btn-card secondary-card"><i class="fab fa-github"></i> GITHUB REPO</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="excel">
+                    <div class="card-inner">
+                        <div class="project-visual">
+                            <img src="assets/screenshots/excel-dashboard.png" alt="Customer Segmentation Analysis">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Customer Segmentation Analysis (Excel)</h3>
+                            <p class="project-summary">Customer segmentation analytics architecture designed as a core component tool to test raw transactional data patterns and identify targeted demographics.</p>
+                            <div class="tech-icons">
+                                <i class="fas fa-file-excel color-excel" title="Excel"></i>
+                                <i class="fas fa-chart-bar" title="Pivot Charts"></i>
+                            </div>
+                            <div class="project-cta">
+                                <a href="#" target="_blank" class="btn-card primary-card"><i class="fas fa-download"></i> DOWNLOAD EXCEL</a>
+                                <a href="#" class="btn-card secondary-card">PROJECT DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="sql">
+                    <div class="card-inner">
+                        <div class="project-visual">
+                            <img src="sql-code.png" alt="E-commerce Database Analytics">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">E-commerce Database Analytics (SQL)</h3>
+                            <p class="project-summary">Visual optimization analytics framework querying core transactions and customer logs to aggregate relational pipeline performance case study models.</p>
+                            <div class="tech-icons">
+                                <i class="fas fa-database color-sql" title="SQL Server"></i>
+                                <i class="fas fa-code-branch" title="Data Warehousing"></i>
+                            </div>
+                            <div class="project-cta">
+                                <a href="#" target="_blank" class="btn-card primary-card"><i class="fas fa-code"></i> VIEW SQL CODE</a>
+                                <a href="https://github.com/alvino11/alvino11" target="_blank" class="btn-card secondary-card"><i class="fab fa-github"></i> GITHUB REPO</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="powerbi">
+                    <div class="card-inner">
+                        <div class="project-visual">
+                            <img src="inventory-dashboard.png" alt="Inventory Optimization Dashboard">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Inventory Optimization (Power BI)</h3>
+                            <p class="project-summary">Power BI distribution analytics tracking supply-side material data parameters and resource logistics variations across factory asset ecosystems.</p>
+                            <div class="tech-icons">
+                                <i class="fas fa-chart-line color-pbi" title="Power BI"></i>
+                                <i class="fas fa-filter" title="DAX"></i>
+                            </div>
+                            <div class="project-cta">
+                                <a href="#" target="_blank" class="btn-card primary-card"><i class="fas fa-arrow-up-right-from-square"></i> VIEW LIVE DASHBOARD</a>
+                                <a href="https://github.com/alvino11/alvino11" target="_blank" class="btn-card secondary-card"><i class="fab fa-github"></i> GITHUB REPO</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
