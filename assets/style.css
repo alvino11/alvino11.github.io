@@ -6,23 +6,14 @@
 :root{
     --bg-light:#FBF9F6;
     --panel-white:#FFFFFF;
-
     --accent-teal:#C2542D;
     --accent-teal-hover:#A94724;
-
     --accent-dark-blue:#1A1A2E;
-
     --text-primary:#5A5650;
     --text-muted:#8A857C;
-
     --border-color:#E8E3DB;
-
-    --card-shadow:
-        0 10px 30px rgba(26,26,46,.06);
-
-    --card-hover-shadow:
-        0 25px 60px rgba(26,26,46,.12);
-
+    --card-shadow: 0 10px 30px rgba(26,26,46,.06);
+    --card-hover-shadow: 0 25px 60px rgba(26,26,46,.12);
     --font-body:'Inter',sans-serif;
     --font-display:'Fraunces',serif;
     --font-mono:'JetBrains Mono',monospace;
@@ -67,6 +58,7 @@ body{
     justify-content:space-between;
     align-items:center;
     padding:0 40px;
+    position: relative;
 }
 
 .nav-logo{
@@ -79,6 +71,10 @@ body{
 
 .accent-text{
     color:var(--accent-teal);
+}
+
+.menu-toggle {
+    display: none; /* Hidden on desktop */
 }
 
 .nav-menu{
@@ -242,7 +238,7 @@ body{
 }
 
 /* =========================
-   SKILLS SECTION (Clean Open-Grid Theme)
+   SKILLS SECTION (Clean Minimalist Open-Grid Style)
 ========================= */
 
 .skills-section {
@@ -474,7 +470,7 @@ body{
 }
 
 /* =========================
-   RESPONSIVE
+   RESPONSIVE DESIGN FIXES
 ========================= */
 
 @media(max-width:992px){
@@ -484,14 +480,68 @@ body{
 }
 
 @media(max-width:768px){
+    /* Display Mobile Hamburg Trigger */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--accent-dark-blue);
+        font-size: 1.4rem;
+        cursor: pointer;
+        padding: 4px;
+        transition: color 0.2s;
+    }
+
+    .menu-toggle:hover {
+        color: var(--accent-teal);
+    }
+
+    /* Transform menu link list into overlay dropdown drawer */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(251, 249, 246, 0.98);
+        border-bottom: 1px solid var(--border-color);
+        padding: 24px 40px;
+        gap: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.04);
+    }
+
+    .nav-menu.mobile-active {
+        display: flex;
+    }
+
+    .nav-socials {
+        border-left: none;
+        padding-left: 0;
+        margin-left: 0;
+        padding-top: 18px;
+        border-top: 1px solid var(--border-color);
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Scaling constraints down to avoid layout text breaking elements */
     .hero-container{
         flex-direction:column;
         text-align:center;
         gap: 35px;
     }
 
+    .hero-name{
+        font-size:2.8rem;
+    }
+
     .hero-actions{
         justify-content:center;
+    }
+
+    .hero-section, .skills-section, .portfolio-section {
+        padding: 55px 20px;
     }
 
     .project-grid{
@@ -504,11 +554,6 @@ body{
     }
 
     .nav-container{
-        flex-direction:column;
-        gap:20px;
-    }
-
-    .hero-name{
-        font-size:3rem;
+        padding: 0 24px;
     }
 }
