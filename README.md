@@ -75,7 +75,7 @@ Each project below includes a short summary. Click through to the repo for full 
 
 ## 📫 More
 
-🌐 **Full portfolio with live previews:** [your-username.github.io/your-repo](#)
+🌐 **Full portfolio with live previews:** [alvino11.github.io](https://alvino11.github.io)
 
 <div align="center">
 
