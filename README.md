@@ -25,9 +25,12 @@ Each project below includes a short summary. Click through to the repo for full 
   <img src="assets/screenshots/excel-dashboard.png" alt="Olist E-Commerce Analytics Dashboard Preview" width="600"/>
 </div>
 
-- **Goal:** What question were you answering or what problem were you solving?
-- **Approach:** Key techniques used, e.g., nested formulas, PivotTables, Power Query, conditional formatting, data validation.
-- **Outcome:** What insight or result did the analysis produce? Quantify if possible (e.g., "identified $X in discrepancies" or "reduced manual reporting time by Y%").
+- **Goal:** Demystify e-commerce marketplace operations for Brazil's largest platform integrator (Olist) by consolidating over 99,000 fragmented relational order records into a centralized executive dashboard that tracks revenue velocity, regional growth drivers, and payment channel distribution.
+
+- **Approach:** Cleaned and modeled raw multi-table relational datasets using **Power Query** to establish an optimal star schema. Engineered performant aggregation layers using **PivotTables**, implemented dynamic **KPI Summary Cards** via cross-sheet formula mapping, and deployed an interactive sidebar panel containing globally linked **Slicers and Timelines** to enable seamless cross-filtering across all visual elements.
+
+- **Outcome:** Successfully mapped regional economic engines, identifying that **São Paulo (SP)** anchors the highest ecosystem value at **$8.01M**, outperforming secondary hubs like **Rio de Janeiro (RJ)** ($2.90M) and **Minas Gerais (MG)** ($2.42M). Isolated major consumer trends showing that **Health & Beauty** leads sector revenue at **$1.71M** and that credit lines heavily dominate platform velocity, capturing **$16.05M** in total processing volume compared to **$4.08M** via traditional bank invoices (*Boleto*).
+
 
 **Skills demonstrated:** `Excel` `PivotTables` `Power Query` `Data Cleaning` `KPI Dashboards`
 
