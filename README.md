@@ -31,7 +31,7 @@ Each project below includes a short summary. Click through to the repo for full 
 
 **Skills demonstrated:** `Excel` `PivotTables` `Power Query` `Data Cleaning` `KPI Dashboards`
 
-🔗 [View Project](#)
+🔗 [View Project](https://github.com/alvino11/alvino11.github.io/tree/main/excel-olist-ecommerce)
 
 ---
 
