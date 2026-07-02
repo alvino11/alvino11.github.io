@@ -331,7 +331,7 @@ body{
 }
 
 /* =========================
-   PROJECT GRID
+   PROJECT GRID (Edge-to-Edge Cleanup)
 ========================= */
 
 .project-grid{
@@ -340,28 +340,22 @@ body{
     gap:32px;
 }
 
-.project-card{
-    background:white;
-    border:1px solid var(--border-color);
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:var(--card-shadow);
-    transition:.35s ease;
-    position:relative;
+.project-card {
+    background: var(--panel-white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden; /* This masks the child images cleanly to the 12px rounded corner layout */
+    box-shadow: 0 4px 20px rgba(26,26,46,.03);
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-.project-card::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:4px;
-    background:var(--accent-teal);
-}
+/* 🟥 REMOVED .project-card::before accent strip entirely to prevent color blocks above images */
 
 .project-card:hover{
-    transform:translateY(-10px);
+    transform:translateY(-6px);
     box-shadow:var(--card-hover-shadow);
 }
 
@@ -371,16 +365,24 @@ body{
     flex-direction:column;
 }
 
-.project-visual{
-    height:240px;
-    overflow:hidden;
+.project-visual {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+    background: #f8fafc;
 }
 
-.project-visual img,
-.project-visual iframe{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+.project-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* Suppresses any browser white-space padding issues below inline graphics */
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-visual img {
+    transform: scale(1.03);
 }
 
 .project-info{
@@ -392,16 +394,18 @@ body{
 
 .project-title{
     color:var(--accent-dark-blue);
-    font-size:1.15rem;
+    font-size:1.25rem;
     margin-bottom:12px;
     font-weight:700;
+    line-height: 1.4;
 }
 
 .project-summary{
-    line-height:1.7;
+    font-size: 0.92rem;
+    line-height:1.65;
     color:var(--text-primary);
     flex-grow:1;
-    margin-bottom:20px;
+    margin-bottom:24px;
 }
 
 /* =========================
@@ -410,21 +414,26 @@ body{
 
 .tech-icons{
     display:flex;
-    gap:18px;
+    gap:14px;
     margin-bottom:20px;
+    align-items: center;
 }
 
 .tech-icons i{
     color:var(--accent-dark-blue);
-    opacity:.75;
-    font-size:1.1rem;
-    transition:.25s;
+    opacity:.6;
+    font-size:1.15rem;
+    transition:.2s ease;
 }
 
 .tech-icons i:hover{
     color:var(--accent-teal);
     opacity:1;
 }
+
+.color-excel { color: #107C41 !important; opacity: 0.85 !important; }
+.color-pbi { color: #F2C811 !important; opacity: 0.85 !important; }
+.color-sql { color: #00758F !important; opacity: 0.85 !important; }
 
 /* =========================
    CARD BUTTONS
@@ -433,40 +442,47 @@ body{
 .project-cta{
     display:flex;
     gap:12px;
+    margin-top: auto;
 }
 
 .btn-card{
     flex:1;
     text-align:center;
     text-decoration:none;
-    padding:11px 0;
-    border-radius:999px;
-    font-size:.76rem;
+    padding:12px 16px;
+    border-radius:8px;
+    font-size:.78rem;
     font-weight:700;
-    letter-spacing: 0.02em;
-    transition:.25s;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition:.2s ease;
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    gap:6px;
+    gap:8px;
+    cursor: pointer;
 }
 
 .primary-card{
-    background:var(--accent-teal);
+    background:var(--accent-dark-blue);
     color:white;
+    border: 1px solid transparent;
 }
 
 .primary-card:hover{
-    background:var(--accent-teal-hover);
+    background:var(--accent-teal);
 }
 
 .secondary-card{
-    border:1px solid var(--accent-dark-blue);
-    color:var(--accent-dark-blue);
+    border:1px solid var(--border-color);
+    background: var(--bg-light);
+    color:var(--text-primary);
 }
 
 .secondary-card:hover{
-    background:rgba(26,26,46,.05);
+    background: #FFFFFF;
+    color: var(--accent-dark-blue);
+    border-color: var(--text-muted);
 }
 
 /* =========================
@@ -480,7 +496,6 @@ body{
 }
 
 @media(max-width:768px){
-    /* Display Mobile Hamburg Trigger */
     .menu-toggle {
         display: block;
         background: none;
@@ -496,7 +511,6 @@ body{
         color: var(--accent-teal);
     }
 
-    /* Transform menu link list into overlay dropdown drawer */
     .nav-menu {
         display: none;
         flex-direction: column;
@@ -525,7 +539,6 @@ body{
         justify-content: center;
     }
 
-    /* Scaling constraints down to avoid layout text breaking elements */
     .hero-container{
         flex-direction:column;
         text-align:center;
