@@ -1,4 +1,4 @@
-# Brazilian E-Commerce (Olist) Ecosystem Performance Dashboard
+# Brazilian E-Commerce (Olist) Business Intelligence Dashboard
 An Executive Data Analysis & Interactive Dashboard Portfolio Project identifying revenue drivers, regional growth trends, and transactional optimizations for Brazil's largest e-commerce marketplace integrator.
 
 ---
