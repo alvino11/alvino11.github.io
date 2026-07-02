@@ -22,7 +22,7 @@ Each project below includes a short summary. Click through to the repo for full 
 > Dynamic Excel KPI dashboard and data model analyzing multi-million dollar e-commerce sales, logistics performance, and consumer payment preferences.
 
 <div align="center">
-  <img src="assets/excel-preview.png" alt="Olist E-Commerce Analytics Dashboard Preview" width="600"/>
+  <img src="assets/screenshots/excel-dashboard.png" alt="Olist E-Commerce Analytics Dashboard Preview" width="600"/>
 </div>
 
 - **Goal:** What question were you answering or what problem were you solving?
