@@ -53,7 +53,7 @@ Each project below includes a short summary. Click through to the repo for full 
 
 **Skills demonstrated:** `SQL Server (SSMS)` `T-SQL` `Window Functions` `CTEs` `Clustered Indexing` `Dynamic SQL` `DuPont Financial Analysis`
 
-🔗 [View Project](sql-sec-dupont-analysis/README.md)
+🔗 [View Project](sql-sec-dupont-analysis)
 
 ---
 
