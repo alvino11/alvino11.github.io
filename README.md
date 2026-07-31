@@ -44,7 +44,7 @@ Each project below includes a short summary. Click through to the repo for full 
 > Dynamic T-SQL data pipeline processing 28M+ SEC EDGAR XBRL records to model corporate financial statements and deconstruct Return on Equity (ROE) using the 3-Step DuPont Identity.
 
 <div align="center">
-  <img src="aassets/screenshots/sql-screenshot.png" alt="SEC EDGAR Financial Analysis Preview" width="600"/>
+  <img src="assets/screenshots/sql-screenshot.png" alt="SEC EDGAR Financial Analysis Preview" width="600"/>
 </div>
 
 - **Goal:** Modeled 8 quarters (~28 million rows) of raw, unstructured SEC EDGAR flat files in SQL Server (SSMS) to evaluate profitability, asset efficiency, and financial leverage for Apple, Microsoft, and Tesla.
