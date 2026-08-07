@@ -72,7 +72,7 @@ Each project below includes a short summary. Click through to the repo for full 
 
 **Skills demonstrated:** `Power BI` `DAX` `Data Modeling` `Dashboard Design`
 
-🔗 [View Project](#)
+🔗 [View Project](medicare-reimbursement-powerbi)
 
 ---
 
