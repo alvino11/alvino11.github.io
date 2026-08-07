@@ -57,13 +57,13 @@ Each project below includes a short summary. Click through to the repo for full 
 
 ---
 
-### 3️⃣ Enterprise Talent Retention Dashboard (Power BI)
-**`📁 /powerbi-talent-retention`**
+### 3️⃣ CMS Medicare Inpatient Hospital Pricing & Reimbursement Analytics (Power BI)
+**`📁 /medicare-reimbursement-powerbi`**
 
 > End-to-end business intelligence solution using Kaggle HR infrastructure data, tracking workforce optimization and predictive turnover metrics.
 
 <div align="center">
-  <img src="assets/powerbi-preview.png" alt="Enterprise Talent Retention Dashboard Preview" width="600"/>
+  <img src="assets/powerbi-dashboard.png" alt="CMS Inpatient Hospital Reimbursement & Chargemaster Analytics" width="600"/>
 </div>
 
 - **Goal:** What decision-makers needed visibility into, and why.
