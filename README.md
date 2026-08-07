@@ -60,7 +60,7 @@ Each project below includes a short summary. Click through to the repo for full 
 ### 3️⃣ CMS Medicare Inpatient Hospital Pricing & Reimbursement Analytics (Power BI)
 **`📁 /medicare-reimbursement-powerbi`**
 
-> End-to-end business intelligence solution using Kaggle HR infrastructure data, tracking workforce optimization and predictive turnover metrics.
+> Executive Power BI dashboard evaluating the gap between CMS Medicare inpatient gross billed charges and actual settlement payouts across U.S. hospitals.
 
 <div align="center">
   <img src="assets/screenshots/powerbi-dashboard.png" alt="CMS Inpatient Hospital Reimbursement & Chargemaster Analytics" width="600"/>
